@@ -9,7 +9,7 @@
 
 <body>
   <header class="">
-    <nav class="header__navigation navigation">
+    <nav class="navigation">
       <a class="navigation__logo">
         <img src="#" height="214" width="902" alt="форма отзыва" />
       </a>
@@ -39,25 +39,25 @@
   <main>
     <h1 class="visually-hidden">feedback request form</h1>
     <h2 class="title">оставьте свой отзыв</h2>
-    <p class="title__appeal">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-    <section class="contact__data">
-      <form action="https://echo.htmlacademy.ru/courses" method="post" class="introfuction" enctype="multipart/form-data">
+    <p class="appeal">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    <section class="client">
+      <form action="https://echo.htmlacademy.ru/courses" method="post" class="introduction" enctype="multipart/form-data">
 
-        <h2 class="title__introduction">представьтесь</h2>
+        <h2 class="introduction__title">представьтесь</h2>
         <label for="first-name" class="name">имя*</label>
-        <input type="text" id="first-name" name="first-name" class="name" value="Пётр"><br>
+        <input type="text" id="first-name" name="first-name" class="client__name" value="Пётр"><br>
         <label for="last-name" class="name">фамилия*</label>
-        <input type="text" id="last-name" name="last-name" class="last__name" value="Пустота"><br>
-        <label for="middle-name" class="name">отчество</label>
-        <input type="text" id="middle-name" name="second-name" class="middle__name" value="Викторович"><br>
-        <section class="contact__media">
+        <input type="text" id="last-name" name="last-name" class="client__name" value="Пустота"><br>
+        <label for="middle-name" class="client__name">отчество</label>
+        <input type="text" id="middle-name" name="second-name" class="client__name" value="Викторович"><br>
+        <section class="client__media">
           <span>контактная информация</span> <br>
           <label for="contact__phone" class="name">контактный телефон*:</label>
-          <input type="phone" id="contact__phone" name="contact-phone" class="contact__phone" value="Введите телефон"><svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <input type="phone" id="contact__phone" name="contact-phone" class="phone" value="Введите телефон"><svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="58" height="58" fill="#E6E6E6" />
             <path d="M23.6 27.8C25 30.6 27.4 32.9 30.2 34.4L32.4 32.2C32.7 31.9 33.1 31.8 33.4 32C34.5 32.4 35.7 32.6 37 32.6C37.6 32.6 38 33 38 33.6V37C38 37.6 37.6 38 37 38C27.6 38 20 30.4 20 21C20 20.4 20.4 20 21 20H24.5C25.1 20 25.5 20.4 25.5 21C25.5 22.2 25.7 23.4 26.1 24.6C26.2 24.9 26.1 25.3 25.9 25.6L23.6 27.8Z" fill="#010101" />
           </svg> <br>
-          <label for="mail" class="contact__mail">электронная почта*:</label>
+          <label for="mail" class="client__mail">электронная почта*:</label>
           <input type="e-mail" id="second-name" name="second-name" class="name" value="Введите e-mail"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z" fill="black" />
           </svg>
@@ -97,7 +97,7 @@
               <li class="places__item">
                 <label class="control">
                   <input class="visually-hidden control__input" type="checkbox" name="places" value="diable bridge" checked>
-                  <span class="control__mark mark__checkbox"></span>
+                  <span class="control__mark checkbox"></span>
                   <span class="control__label">Мост Дьявола</span>
                 </label>
               </li>
@@ -105,21 +105,21 @@
               <li class="places__item">
                 <label class="control">
                   <input class="visually-hidden control__input" type="checkbox" name="places" value="Гора-Колокол" checked>
-                  <span class="control__mark mark__checkbox"></span>
+                  <span class="control__mark checkbox"></span>
                   <span class="control__label">Гора-Колокол</span>
                 </label>
               </li>
               <li class="places__item">
                 <label class="control">
                   <input class="visually-hidden control__input" type="checkbox" name="places" value="Гора-Колокол" checked>
-                  <span class="control__mark mark__checkbox"></span>
+                  <span class="control__mark checkbox"></span>
                   <span class="control__label">Гора-Колокол</span>
                 </label>
               </li>
               <li class="places__item">
                 <label class="control">
                   <input class="visually-hidden control__input" type="checkbox" name="places" value="Красные скалы">
-                  <span class="control__mark mark__checkbox"></span>
+                  <span class="control__mark checkbox"></span>
                   <span class="control__label">Красные скалы</span>
                 </label>
               </li>
@@ -130,13 +130,13 @@
           <label for="emotions__details" class="details">опишите свои эмоции</label>
           <input type="text" id="emotions__details" name="emotions" class="emotions__input" value="опишите подробно все свои восторги"><br>
         </section>
-        <button class="button__submit" type="submit">отправить отзыв</button>
+        <button class="submission" type="submit">отправить отзыв</button>
         <span class="requirement">* — обязательные поля</span>
       </form>
     </section>
 
     </ma<footer class="footer">
-    <a class="footer__appeal" href="#">#VISITSEDONA</a>
+    <a class="sedona" href="#">#VISITSEDONA</a>
     <ul class="social list-reset">
       <li class="social__item">
         <a class="social__link" href="#">
@@ -157,9 +157,9 @@
         </a>
       </li>
     </ul>
-    <div class="footer__copyright">
-      <p class="footer__copyright-text">РАЗРАБОТАНО</p>
-      <a class="footer__copyright-link" href="#" target="_blank">
+    <div class="copyright">
+      <p class="copyright__text">РАЗРАБОТАНО</p>
+      <a class="copyright__link" href="#" target="_blank">
         <img src="#" alt="HtmlAcademy" />
       </a>
     </div>
