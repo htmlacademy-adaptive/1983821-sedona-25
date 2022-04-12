@@ -30,64 +30,100 @@
             <a class="navigation__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="https://htmlacademy.ru/">html academy</a>
+            <a class="navigation__link" href="https://htmlacademy.ru">Html Academy</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
   <main class="main">
-    <section class="welcome">
-      <h1 class="welcome__title">Фото и видео</h1>
-      <p class="welcome__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+    <section class="welcome welcome--page">
+      <div class="welcome__bg">
+        <img src="#" width="229" height="39" alt="Welcome text">
+      </div>
+      <div class="welcome__description">
+        <h1 class="welcome__title">Фото и видео</h1>
+        <p class="welcome__overview">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      </div>
     </section>
     <section class="gallery">
-      <ol class="pictures">
+      <ol class="gallery__list">
         <li class="gallery__item">
-          <img src="#" alt="landscape" height="280" width="280">
-          <p class="gallery__title">неродные просторы</p>
-          <span class="photographer">Автор фото:</span>
-          <span class="name">Борис</span><br>
-          <img src="/like-icon.svg" class="wonderfull" width="23" height="21" alt="like">
-          <span class="amount">1350</span>
+          <div class="gallery__img">
+            <img src="img/nonlocalevening1.png" alt="Неродные просторы" height="280" width="280">
+          </div>
+          <div class="gallery__container">
+            <div class="gallery__description">
+              <h2 class="gallery__title">Неродные просторы</h2>
+              <span class="gallery__photographer">Автор фото: Борис</span>
+            </div>
+            <button class="gallery__like" type="button">
+              <span class="visually-hidden">Количество лайков</span>
+              1350
+            </button>
+          </div>
+        </li>
+
+        <li class="gallery__item">
+          <div class="gallery__img">
+            <img src="img/localview2.png" alt="landscape" height="280" width="280">
+          </div>
+          <div class="gallery__container">
+            <div class="gallery__description">
+              <h2 class="gallery__title">Местная растительность</h2>
+              <span class="gallery__photographer">Автор фото: Сергей</span>
+            </div>
+            <button class="gallery__like" type="button">
+              <span class="visually-hidden">Количество лайков</span>
+              143
+            </button>
+          </div>
         </li>
         <li class="gallery__item">
-          <img src="#" alt="landscape" height="280" width="280">
-          <p class="gallery__title">Местная растительность</p>
-          <span class="photographer">Автор фото:</span>
-          <span class="name">Сергей</span><br>
-          <img src="/like-icon.svg" class="wonderfull" width="23" height="21" alt="like">
-          <span class="amount">143</span>
+          <div class="gallery__img">
+            <img src="img/landscape3.png" alt="Неродные просторы" height="280" width="280">
+          </div>
+          <div class="gallery__container">
+            <div class="gallery__description">
+              <h2 class="gallery__title">Дорога на север</h2>
+              <span class="gallery__photographer">Автор фото: Пётр</span>
+            </div>
+            <button class="gallery__like" type="button">
+              <span class="visually-hidden">Количество лайков</span>
+              96
+            </button>
+          </div>
         </li>
         <li class="gallery__item">
-          <img src="#" alt="landscape" height="280" width="280">
-          <p class="gallery__title">дорога на север</p>
-          <span class="photographer">Автор фото:</span>
-          <span class="name">Пётр</span><br>
-          <img src="/like-icon.svg" class="wonderfull" width="23" height="21" alt="like">
-          <span class="amount">96</span>
-        </li>
-        <li class="gallery__item">
-          <img src="#" alt="landscape" height="280" width="280">
-          <p class="gallery__title">мост дьявола</p>
-          <span class="photographer">Автор фото:</span>
-          <span class="name">Антон</span><br>
-          <img src="/like-icon.svg" class="wonderfull" width="23" height="21" alt="like">
-          <span class="amount">254</span>
+          <div class="gallery__img">
+            <img src="img/diablebridge.png" alt="Неродные просторы" height="280" width="280">
+          </div>
+          <div class="gallery__container">
+            <div class="gallery__description">
+              <h2 class="gallery__title">Мост Дьявола</h2>
+              <span class="gallery__photographer">Автор фото: Антон</span>
+            </div>
+            <button class="gallery__like" type="button">
+              <span class="visually-hidden">Количество лайков</span>
+              254
+            </button>
+          </div>
         </li>
       </ol>
     </section>
-    <section class="provocation">
-      <p class="question">Вы ещё сомневаетесь?</p>
-      <p class="proposal">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <video class="movie visually-hidden" src="video-mobile.jpg">road film</video>
+    <section class="video">
+      <p class="video__title page-title">Вы ещё сомневаетесь?</p>
+      <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <div class="video__container">
+        <img src="img/video-mobile.jpg" alt="Видеопрезентация" width="280" height="177">
+      </div>
     </section>
-    </p>
-
 
   </main>
   <footer class="footer">
-    <a class="footer__appeal" href="#">#VISITSEDONA</a>
+    <a class="footer__appeal" href="#">
+      <div id="Visitsedona"></div>
+    </a>
     <ul class="social list-reset">
       <li class="social__item">
         <a class="social__link" href="#">
@@ -109,9 +145,9 @@
       </li>
     </ul>
     <div class="footer__copyright">
-      <p class="footer__copyright-text">РАЗРАБОТАНО</p>
-      <a class="footer__copyright-link" href="#" target="_blank">
-        <img src="#" alt="HtmlAcademy" />
+      <p class="footer__copyright-text">Разработано</p>
+      <a class="footer__copyright-link" href="https://htmlacademy.ru" target="_blank">
+        <img src="img/htmlacademy.svg" alt="HtmlAcademy" width="27" height="34">
       </a>
     </div>
   </footer>
