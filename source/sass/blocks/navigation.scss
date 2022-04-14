@@ -13,3 +13,30 @@
 
   background-color: #81b3d2;
 }
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.navigation__wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  grid-template-columns: 1fr;
+}
+
+.navigation__list {
+  justify-items: center;
+}
+
+.navigation__item {
+  align-self: center;
+
+  font-size: 30px;
+  color: yellowgreen;
+}
