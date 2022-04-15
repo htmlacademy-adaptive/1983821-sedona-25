@@ -10,13 +10,11 @@
   z-index: 5;
 
   display: none;
-  justify-content: right;
-  width: 1200px;
 
   background-color: #81b3d2;
 }
 
-.header {
+.header__navigation {
   display: block;
   justify-content: center;
   align-items: center;
@@ -24,21 +22,11 @@
 }
 
 .navigation__wrapper {
-  display: grid;
-  justify-content: center;
-  align-items: center;
+  display: none;
   margin: 0 auto;
-
-  grid-template-columns: 1fr;
-}
-
-.navigation__list {
-  justify-items: center;
 }
 
 .navigation__item {
-  align-self: center;
-
   font-size: 20px;
   color: magenta;
 }
