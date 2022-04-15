@@ -9,13 +9,15 @@
   left: 0;
   z-index: 5;
 
-  display: block;
+  display: none;
+  justify-content: right;
+  width: 1200px;
 
   background-color: #81b3d2;
 }
 
 .header {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -37,6 +39,6 @@
 .navigation__item {
   align-self: center;
 
-  font-size: 30px;
-  color: yellowgreen;
+  font-size: 20px;
+  color: magenta;
 }
