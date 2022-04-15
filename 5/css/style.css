@@ -23,10 +23,6 @@ img {
   object-position: center;
 }
 
-.visually-hidden {
-  display: none;
-}
-
 .list-reset {
   margin: 0;
   padding: 0;
@@ -58,12 +54,10 @@ img {
   left: 0;
   z-index: 5;
   display: none;
-  justify-content: right;
-  width: 1200px;
   background-color: #81b3d2;
 }
 
-.header {
+.header__navigation {
   display: block;
   justify-content: center;
   align-items: center;
@@ -71,27 +65,20 @@ img {
 }
 
 .navigation__wrapper {
-  display: grid;
-  justify-content: center;
-  align-items: center;
+  display: none;
   margin: 0 auto;
-  grid-template-columns: 1fr;
-}
-
-.navigation__list {
-  justify-items: center;
 }
 
 .navigation__item {
-  align-self: center;
   font-size: 20px;
   color: magenta;
 }
 
 .welcome__bg {
-  padding-top: 90px;
-  padding-bottom: 85px;
-  background-image: url "../img/back-mobile.jpg";
+  display: inline;
+  padding-top: 230px;
+  /* padding-bottom: 85px;*/
+  background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
