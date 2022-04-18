@@ -1,6 +1,6 @@
 // Прописываем relative, что бы логотип и гамбургер-меню не убегали
 .navigation {
-  position: absolute;
+  position: relative;
 }
 
 // Логотипу задаем display block и размеры, и позиционируем посередине
