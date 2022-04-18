@@ -1,8 +1,39 @@
-.navigation__wrapper {
-  display: none;
+// Прописываем relative, что бы логотип и гамбургер-меню не убегали
+.navigation {
+  position: absolute;
 }
 
-.navigation--open .navigation__wrapper {
+// Логотипу задаем display block и размеры, и позиционируем посередине
+.navigation__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  display: block;
+  width: 185px;
+  height: 96px;
+
+  transform: translateX(-50%);
+}
+
+// Позиционируем кнопку в правом углу, прописываем размеры, убераем бордер и фон. Импортируем из фигмы картинку в папку img
+.navigation__btn {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 10;
+
+  width: 23px;
+  height: 22px;
+
+  background-color: transparent;
+  background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+}
+
+.navigation__wrapper {
   position: absolute;
   top: 0;
   right: 0;
@@ -14,19 +45,80 @@
   background-color: #81b3d2;
 }
 
-.header__navigation {
+// Добавим тень через псевдоэлемент по макету
+.navigation__wrapper::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  height: 7px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+}
+
+// Зачем display none? Мы же наоборот открываем меню, нужно поставить display block. justify-content работает только с flex и grid и зачем меню нужно расположить справа? Зачем задавать ширину 1200px? Ширина мобильной версии 320px, но в прописывании ширины нет необходимости.
+.navigation--open .navigation__wrapper {
   display: block;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+  // display: none;
+  // justify-content: right;
+  // width: 1200px;
 }
 
-.navigation__wrapper {
-  display: none;
-  margin: 0 auto;
+// При открытом меню меняем гамбургер на крестик
+.navigation--open .navigation__btn {
+  background-image: url("../img/icon-cross.svg");
 }
 
+// стили для блока с классом header пишутся в файле header.scss
+// .header {
+// display: block;
+// justify-content: center;
+// align-items: center;
+// margin: 0 auto;
+// }
+
+// У нас уже прописаны выше свойства для этого блока в открытом и закрытом состоянии
+// .navigation__wrapper {
+//   display: grid;
+//   justify-content: center;
+//   align-items: center;
+//   margin: 0 auto;
+
+//   grid-template-columns: 1fr;
+// }
+
+// justify-items работает только с flex и grid. В этих сетках на мобильном нет необходимости, элементы и так ведут себя так как нам нужно
+// .navigation__list {
+// justify-items: center;
+// }
+
+// align-self работает только с flex и grid. В этих сетках на мобильном нет необходимости, элементы и так ведут себя так как нам нужно
+// Характеристика шрифта пишутся на конкретный элемент, в данном случае на ссылку, а не на li. Цвет прописывается в шестнадцатеричном коде
+// В navigation__item будут только паддинги и тень на мобильной версии и делаем текст по середине
 .navigation__item {
-  font-size: 20px;
-  color: magenta;
+  padding: 17px 17px 13px;
+  // align-self: center;
+  // font-size: 20px;
+  // color: #ff00ff;
+
+  text-align: center;
+
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.navigation__link {
+  display: inline-block;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
 }
