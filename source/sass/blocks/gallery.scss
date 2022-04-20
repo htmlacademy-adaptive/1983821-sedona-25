@@ -28,11 +28,16 @@
 .gallery__title {
   margin-bottom: 5px;
 }
-.gallery__list:nth-last-child() .gallery__item {
+
+/*.gallery__list:nth-last-child() .gallery__item {
   border-bottom-width: 1px;
-}
-.video__title,
-video__text,
-video__container {
-  padding-left: 20px;
+}*/
+
+.video {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: 40px;
+  padding-left: 40px;
 }

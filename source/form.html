@@ -55,16 +55,16 @@
             <h2 class="form__fieldset-title">Представьтесь:</h2>
             <ul class="form__contact-list list-reset">
               <li class="form__contact-item">
-                <label class="form__contact-label" for="name">Имя*:</label>
+                <label class="form__contact-label" for="name">Имя*:</label><br>
                 <input class="form__contact-input" id="name" type="text" name="name" value="Пётр" required>
               </li>
               <li class="form__contact-item">
-                <label class="form__contact-label" for="surname">Фамилия*:</label>
+                <label class="form__contact-label" for="surname">Фамилия*:</label><br>
                 <input class="form__contact-input" id="surname" type="text" name="surname" value="Пустота" required>
               </li>
               <li class="form__contact-item">
-                <label class="form__contact-label" for="patronymic">Отчество*:</label>
-                <input class="form__contact-input" id="patronymic" type="text" name="patronymic" value="Викторович" required>
+                <label class="form__contact-label" for="patronymic">Отчество:</label><br>
+                <input class="form__contact-input" id="patronymic" type="text" name="patronymic" value="Викторович">
               </li>
             </ul>
           </fieldset>
@@ -90,15 +90,15 @@
           <h2 class="form__fieldset-title form__fieldset-title--lines">Ваше общее впечатление:</h2>
           <ul class="form__options list-reset">
             <li class="form__options-item">
-              <input class="form__options-input visually-hidden" type="radio" name="feedback" value="положительное" id="filter-positive" checked="">
+              <input class="form__options-input " type="radio" name="feedback" value="положительное" id="filter-positive" checked="">
               <label class="form__options-label form__options-label--radio" for="filter-positive">Скорее положительное</label>
             </li>
             <li class="form__options-item">
-              <input class="form__options-input visually-hidden" type="radio" name="feedback" value="отрицательное" id="filter-negative">
+              <input class="form__options-input" type="radio" name="feedback" value="отрицательное" id="filter-negative">
               <label class="form__options-label form__options-label--radio" for="filter-negative">Скорее отрицательное</label>
             </li>
             <li class="form__options-item">
-              <input class="form__options-input visually-hidden" type="radio" name="feedback" value="затрудняюсь" id="filter-difficult">
+              <input class="form__options-input " type="radio" name="feedback" value="затрудняюсь" id="filter-difficult">
               <label class="form__options-label form__options-label--radio" for="filter-difficult">Затрудняюсь ответить</label>
             </li>
           </ul>
@@ -106,20 +106,22 @@
         <fieldset class="form__fieldset form__fieldset--attractions">
           <h2 class="form__fieldset-title form__fieldset-title--lines">Посещенные достопримечательности:</h2>
           <ul class="form__options list-reset">
-            <li class="form__options-item">
-              <input class="form__options-input visually-hidden" type="checkbox" name="attractions" value="мост-дьявола" id="devil-bridge" checked="">
-              <label class="form__options-label form__options-label--check" for="devil-bridge">Мост Дьявола</label>
+            <li class="form__options--item">
+              <input class="form__options--input" type="checkbox" name="attractions" value="мост-дьявола" id="devil-bridge" checked="">
+              <label class="form__options--label form__options-label--check" for="devil-bridge">Мост Дьявола</label>
             </li>
-            <li class="form__options-item">
-              <input class="form__options-input visually-hidden" type="checkbox" name="attractions" value="гора-колокол" id="bell-mountain" checked="">
-              <label class="form__options-label form__options-label--check" for="bell-mountain">Гора-Колокол</label>
+            <li class="form__options--item">
+
+              <input class="form__options--input" type="checkbox" name="attractions" value="гора-колокол" id="bell-mountain" checked="">
+              <label class="form__options--label form__options-label--check" for="bell-mountain">Гора-Колокол</label>
+
             </li>
-            <li class="form__options-item">
-              <input class="form__options-input visually-hidden" type="checkbox" name="attractions" value="Слайд-парк" id="slide-park" checked="">
+            <li class="form__options--item">
+              <input class="form__options-input" type="checkbox" name="attractions" value="Слайд-парк" id="slide-park" checked="">
               <label class="form__options-label form__options-label--check" for="slide-park">Слайд-парк</label>
             </li>
-            <li class="form__options-item">
-              <input class="form__options-input visually-hidden" type="checkbox" name="attractions" value="Красные-скалы" id="red-rocks">
+            <li class="form__options--item">
+              <input class="form__options-input" type="checkbox" name="attractions" value="Красные-скалы" id="red-rocks">
               <label class="form__options-label form__options-label--check" for="red-rocks">Красные скалы</label>
             </li>
           </ul>
@@ -157,7 +159,7 @@
     </ul>
     <div class="footer__copyright">
       <p class="footer__copyright-text">Разработано</p>
-      <a class="footer__copyright-link" href="https://htmlacademy.ru" target="_blank">
+      <a class="footer__copyright-link visually-hidden" href="https://htmlacademy.ru">reference
         <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"></path>
         </svg>

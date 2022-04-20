@@ -1,0 +1,37 @@
+/*.filter-infrastructure,
+.filter-accomodation,
+.catalog-filter-list,
+.price-limits-area {
+    justify-content: left;
+    margin-left: -20px;
+    padding-left: -20px;
+    list-style: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+} */
+/*.form__contact-item {
+    display: flex;
+    flex-direction: column;
+  background-color: aquamarine;
+}*/
+
+.form__fieldset {
+  display: grid;
+  align-items: center;
+
+  text-align: left;
+
+  border: 0;
+  border-bottom: 1px solid #d6d6d6;
+
+  grid-template-columns: 1fr;
+}
+
+.form__wrapper-fieldset {
+  width: 100%;
+}
+
+.form__fieldset-title {
+  text-align: center;
+}
