@@ -10,7 +10,7 @@
   padding: 10px 20px 25px;
 
   border: 0;
-  border-style: dashed;
+  border-style: solid;
   border-color: #e5e5e5;
   border-top-width: 1px;
 }
@@ -29,9 +29,9 @@
   margin-bottom: 5px;
 }
 
-/*.gallery__list:nth-last-child() .gallery__item {
-  border-bottom-width: 1px;
-}*/
+.gallery__list.gallery__list:nth-last-child(1) .gallery__item {
+  border-bottom: 1px solid #e5e5e5;
+}
 
 .video {
   display: block;
