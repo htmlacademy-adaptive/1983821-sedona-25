@@ -75,13 +75,16 @@
               <li class="form__contact-item">
                 <label class="form__contact-label" for="phone">Контактный телефон*:</label>
                 <div class="form__input-wrapper form__input-wrapper--phone">
+
                   <input class="form__contact-input" id="phone" type="text" name="phone" placeholder="Введите телефон">
+                  <img class="phone__icon" width="58" height="58" src="img/handset.svg" alt="телефон">
                 </div>
               </li>
               <li class="form__contact-item">
                 <label class="form__contact-label" for="e-mail">Электронная почта*:</label>
                 <div class="form__input-wrapper form__input-wrapper--mail">
                   <input class="form__contact-input" id="e-mail" type="text" name="e-mail" placeholder="Введите e-mail">
+                  <img class="mail__icon" width="58" height="58" src="img/mail-icon.svg" alt="envelop">
                 </div>
               </li>
             </ul>
@@ -129,10 +132,10 @@
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--recall">
           <h2 class="form__fieldset-title form__fieldset-title--lines">Опишите свои эмоции:</h2>
-          <textarea id="recall-field" name="emotion" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="form__feedback" id="recall-field" name="emotion" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--submit">
-          <button class="form__submit" type="submit">Отправить отзыв</button>
+          <button class="form__submit button" type="submit">Отправить отзыв</button>
           <span class="form__note">*-обязательные поля</span>
         </fieldset>
       </form>
