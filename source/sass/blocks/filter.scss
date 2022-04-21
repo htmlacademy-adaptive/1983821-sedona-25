@@ -85,3 +85,44 @@ textarea {
 .form__submit {
   width: 100%;
 }
+
+.modal {
+  display: none;
+}
+
+.modal__container {
+  display: none;
+}
+
+.modal--open {
+  display: block;
+}
+
+.modal—open-success .modal__container-success {
+  display: block;
+}
+
+.modal—open-error .modal__container-error {
+  display: block;
+}
+
+.modal__wrapper-text {
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+.modal__title {
+  font-weight: 700, bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.modal__text {
+  font-weight: 400, normal;
+  line-height: 21px;
+  text-align: center;
+
+  size: 14px;
+}
