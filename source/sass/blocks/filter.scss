@@ -36,13 +36,14 @@
   line-height: 26px;
 
   background-color: #f2f2f2;
+  border: none;
 }
 
 .form__contact-label {
   font-weight: 400, regular;
   font-size: 14px;
   line-height: 21px;
-  color: rgba(0, 0, 0, 0.3);
+  color: #333333;
   text-transform: uppercase;
 }
 
@@ -62,7 +63,8 @@
   display: flex;
 }
 
-.form__fieldset-title--lines {
+.form__feedback,
+textarea {
   /* position: absolute;
   left: 20px;
   width: 279px;
@@ -70,5 +72,16 @@
   top: 1759px;*/
   background: #f2f2f2;
 
-  mix-blend-mode: normal;
+  /* mix-blend-mode: normal;*/
+}
+
+.form__input-wrapper--phone,
+.form__input-wrapper--mail {
+  display: grid;
+
+  grid-template-columns: 1fr 58px;
+}
+
+.form__submit {
+  width: 100%;
 }
