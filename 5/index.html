@@ -46,86 +46,115 @@
         <img src="img/sedona-welcome.svg" width="282" height="214" alt="Welcome.">
       </div>
       <div class="welcome__description">
-        <p class="welcome__title">Седона - небольшой городок в Аризоне, заслуживающий большего</p>
-        <p class="welcome__overview">Рассмотрим 5 причин, по которым Седона круче чем Гранд - Каньон!</p>
+        <!-- Вставляем черточку спец символом, что бы было по макету. В конце фразы стоит восклицательный знак -->
+        <p class="welcome__title">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</p>
+        <!-- По макету Гранд Каньон пишется без тире, с пробелом. И после Седона стоит запятая -->
+        <p class="welcome__overview">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
     </section>
     <section class="advantages">
       <ul class="advantages__list list-reset">
         <li class="advantages__item advantages__item--full">
-          <div class="advantages__wrapper">
-            <div class="advantages__container--specific">
+          <!-- Добавим доп класс для упрощения стилизации -->
+          <!-- <div class="advantages__wrapper"> -->
+          <div class="advantages__wrapper advantages__wrapper--full">
+            <!-- Во первых модификатор не может быть без элемента или блока, вы должны были прописать 2 класса  advantages__container и advantages__container--specific Но в этом модификаторе нет необходимости -->
+            <!-- <div class="advantages__container--specific"> -->
+            <div class="advantages__container">
               <h2 class="advantages__title">Настоящий городок</h2>
               <p class="advantages__number">— №1 —</p>
-              <p class="advantages__description"> Седона - не аттракцион для туристов. Там течёт своя жизнь</p>
+              <!-- В тексте тире нет, между словами "Туристов" и "там" стоит запятая. Буквы Ë нет -->
+              <!-- <p class="advantages__description"> Седона - не аттракцион для туристов. Там течёт своя жизнь</p> -->
+              <p class="advantages__description"> Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="advantages__img">
               <img src="img/advantages@1x.jpg" width="320" height="260" alt="Праздничный городок.">
             </div>
           </div>
-
-          <ul class="advantages__attractions">
+          <!-- Добавляем cписку list-reset -->
+          <ul class="advantages__attractions list-reset">
             <div class="advantages__wrapper">
               <li class="advantages__attractions-item advantages__attractions-item--motel">
                 <h3 class="advantages__title">Жилье</h3>
-                <p class="advantages__description">Рекомендуем пожить в настоящем месте, всё как в кино!</p>
+                <!-- Не правильный текст в абзаце -->
+                <!-- <p class="advantages__description">Рекомендуем пожить в настоящем месте, всё как в кино!</p> -->
+                <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li class="advantages__attractions-item advantages__attractions-item--meal">
                 <h3 class="advantages__title">Еда</h3>
-                <p class="advantages__description">Всегда заказывайте топовый фирменный бургер. Вы не разочаруетесь!</p>
+                <!-- Не правильный текст в абзаце -->
+                <!-- <p class="advantages__description">Всегда заказывайте топовый фирменный бургер. Вы не разочаруетесь!</p> -->
+                <p class="advantages__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="advantages__attractions-item advantages__attractions-item--souvenirs">
                 <h3 class="advantages__title">Сувениры</h3>
-                <p class="advantages__description">Не только китайского, но и настоящего местного производства!</p>
+                <!-- Не правильный текст в абзаце -->
+                <!-- <p class="advantages__description">Не только китайского, но и настоящего местного производства!</p> -->
+                <p class="advantages__description">Не только китайского, но и местного производства!</p>
               </li>
             </div>
           </ul>
-
         </li>
-        <li class="advantages__item advantages__item--ful">
-          <div class="advantages__wrapper">
+        <li class="advantages__item advantages__item--full">
+          <!-- Добавим доп класс для упрощения стилизации -->
+          <!-- <div class="advantages__wrapper"> -->
+          <div class="advantages__wrapper advantages__wrapper--full">
             <div class="advantages__img">
               <img src="img/advantages-2@1x.jpg" width="320" height="260" alt="Мост Дьявола.">
             </div>
-            <div class="advantages__container--specific">
+            <!-- Во первых модификатор не может быть без элемента или блока, вы должны были прописать 2 класса  advantages__container и advantages__container--specific Но в этом модификаторе нет необходимости -->
+            <!-- <div class="advantages__container--specific"> -->
+            <div class="advantages__container">
               <h3 class="advantages__title">Там есть мост Дьявола</h3>
               <p class="advantages__number">— №2 —</p>
-              <p class="advantages__description">Да, по нему можно пройти, если вы осмелитесь, разумеется</p>
+              <!-- Не правильный текст в абзаце -->
+              <!-- <p class="advantages__description">Да, по нему можно пройти, если вы осмелитесь, разумеется</p> -->
+              <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
           </div>
         </li>
-        <div class="advantages__wrapper">
-          <li class="advantages__item">
-            <div class="advantages__container">
-              <h3 class="advantages__title ">Небольшая площадь</h3>
-              <p class="advantages__number">— №3 — </p>
-              <p class="advantages__description">Все достопримечательности находятся очень близко</p>
-            </div>
-          </li>
-          <li class="advantages__item">
-            <div class="advantages__container">
-              <h3 class="advantages__title">Красивая дорога</h3>
-              <p class="advantages__number">— №4 —</p>
-              <p class="advantages__description ">Ехать в Седону из Лас Вегаса совсем нескучно</p>
-            </div>
-          </li>
-          <li class="advantages__item">
-            <div class="advantages__container">
-              <h3 class="advantages__title ">Мало туристов</h3>
-              <p class="advantages__number">— №5 —</p>
-              <p class="advantages__description">Большинство туристов едет в Гранд Каньон и толпится там</p>
-            </div>
-          </li>
-        </div>
+        <!-- В списках не допускаются другие дочерние элементы кроме li  -->
+        <!-- <div class="advantages__wrapper"> -->
+        <li class="advantages__item">
+          <div class="advantages__container">
+            <h3 class="advantages__title ">Небольшая площадь</h3>
+            <p class="advantages__number">— №3 — </p>
+            <!-- Не правильный текст в абзаце -->
+            <!-- <p class="advantages__description">Все достопримечательности находятся очень близко</p> -->
+            <p class="advantages__description">Все интересные места находятся очень близко</p>
+          </div>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__container">
+            <h3 class="advantages__title">Красивая дорога</h3>
+            <p class="advantages__number">— №4 —</p>
+            <!-- Не правильный текст в абзаце -->
+            <!-- <p class="advantages__description ">Ехать в Седону из Лас Вегаса совсем нескучно</p> -->
+            <p class="advantages__description ">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__container">
+            <h3 class="advantages__title ">Мало туристов</h3>
+            <p class="advantages__number">— №5 —</p>
+            <!-- Не правильный текст в абзаце -->
+            <!-- <p class="advantages__description">Большинство туристов едет в Гранд Каньон и толпится там</p> -->
+            <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
+        </li>
+        <!-- </div> -->
       </ul>
     </section>
     <section class="hotels">
       <h2 class="hotels__title">Заинтересовались?</h2>
-      <p class="hotels__text">
+      <!-- Убираем br -->
+      <!-- <p class="hotels__text">
         Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в Седоне.
-      </p>
-      <a class="hotels__search button" href="#">Поиск гостиницы в Седоне</a>
+      </p> -->
+      <p class="hotels__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне.</p>
+      <!-- Не правильный текст в абзаце -->
+      <a class="hotels__search button" href="#">Найти гостиницу</a>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта седоны</h2>
