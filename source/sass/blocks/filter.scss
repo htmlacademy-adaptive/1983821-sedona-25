@@ -10,11 +10,6 @@
   grid-template-columns: 1fr;
 }
 
-/*.form__fieldset.form__fieldset:nth-last-child(1),
-.form__fieldset.form__fieldset:nth-last-child(2) {
-  border-bottom: none;
-}
-*/
 .form__wrapper--fieldset {
   display: block;
   width: 100%;
@@ -48,7 +43,6 @@
 }
 
 .form__options-label {
-  /* identical to box height, or 144% */
   display: flex;
   align-items: center;
   margin-left: 16px;
@@ -65,14 +59,7 @@
 
 .form__feedback,
 textarea {
-  /* position: absolute;
-  left: 20px;
-  width: 279px;
-  height: 150px;
-  top: 1759px;*/
   background: #f2f2f2;
-
-  /* mix-blend-mode: normal;*/
 }
 
 .form__input-wrapper--phone,
@@ -87,42 +74,70 @@ textarea {
 }
 
 .modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
   display: none;
+
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal--open-success,
+.modal--open-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal__container {
   display: none;
+  width: 320px;
+
+  background-color: #ffffff;
 }
 
-.modal--open {
+.modal--open-success {
+  width: 244px;
+  height: 144px;
+  padding: 39px 39px 15px 30px;
+}
+
+.modal--open-error {
+  width: 237px;
+  height: 114px;
+}
+
+.modal--open-success .modal__container-success {
   display: block;
 }
 
-.modal—open-success .modal__container-success {
-  display: block;
-}
-
-.modal—open-error .modal__container-error {
+.modal--open-error .modal__container-error {
   display: block;
 }
 
 .modal__wrapper-text {
+  width: 237px;
+  height: 114px;
+  padding: 45px 42px 121px 41px;
+
   text-transform: uppercase;
 
   background-color: #ffffff;
 }
 
 .modal__title {
-  font-weight: 700, bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
 }
 
 .modal__text {
-  font-weight: 400, normal;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 21px;
   text-align: center;
-
-  size: 14px;
 }
