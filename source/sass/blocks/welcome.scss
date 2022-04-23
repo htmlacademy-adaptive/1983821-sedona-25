@@ -1,26 +1,20 @@
-// Фон гор и белая вставка делаются через множественный фон
 .welcome__bg {
   padding-top: 90px;
   padding-bottom: 85px;
-  // Между url и скобками пробела нет
-  // background-image: url ("../img/back-mobile.jpg");
-  // background-image: url("../img/back-mobile.jpg");
 
   background-image: url("../img/welcome-triangle.svg"),
     url("../img/welcome-bg.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: bottom, 0 0;
+  background-position: bottom;
   background-size: 100%, cover;
 }
 
-// Центруем текст и прописываем паддинги.
 .welcome__description {
   padding: 16px 30px;
 
   text-align: center;
 }
 
-// Задаем размеры букв, block и центруем картинку
 .welcome__bg img {
   display: block;
   width: 282px;
@@ -28,7 +22,6 @@
   margin: 0 auto;
 }
 
-// Прописываем характеристики текста
 .welcome__title {
   margin-bottom: 36px;
 

@@ -1,4 +1,3 @@
-// Добавляем белую вставку через псевдоэлемент
 .advantages {
   position: relative;
 }
@@ -7,19 +6,11 @@
   position: relative;
 }
 
-// На мобильной версии элементы идут друг за другом и поэтому нужно прописать не row, а column
 .advantages__wrapper {
   display: flex;
-  //   flex-direction: row;
   flex-direction: column;
 }
 
-// Этот класс не нужен, нужно перекрасить блок от родителя
-// .advantages__container--specific {
-//   background-color: #81b3d2;
-// }
-
-// Всем advantage__container задаете паддинги, серый фон.
 .advantages__container {
   padding: 8px 35px 24px;
 
@@ -49,7 +40,6 @@
   background-size: cover;
 }
 
-// Прописываем характеристики текста
 .advantages__title {
   margin-bottom: 11px;
 
@@ -98,7 +88,6 @@
   padding-bottom: 50px;
 }
 
-// Резервируем место под иконку с помощью левого паддинга
 .advantages__attractions-item {
   padding: 13px 15px 0 65px;
 
@@ -107,12 +96,10 @@
   background-repeat: no-repeat;
 }
 
-//  Корректируем маргин по макету
 .advantages__attractions-item .advantages__title {
   margin-bottom: 16px;
 }
 
-// Так конечно лучше паддинги не править, но так как макет немного кривоват, а клиент хочет pixel perfect то приходится идти на вот такие меры, как правка паддингов в каждом блоке
 .advantages__attractions-item--motel {
   background-image: url("../img/icon-house.svg");
   background-position: 18px 21px;
@@ -146,4 +133,8 @@
   height: 1px;
 
   background-color: #d6d6d6;
+}
+
+.advantages__item:last-child::after {
+  display: none;
 }
