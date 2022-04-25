@@ -1,0 +1,8 @@
+// Для какой цели эти свойства? justify-content и align-items работают только с flex и grid. header и так имеет display block по умолчанию. Цинтровщик не сработает потому что не указана ширина и в нем нет необходимости. В данном макете этот блок носит больше симантический характер. Пропишим только минимальную высоту
+.header {
+  min-height: 56px;
+  // display: block;
+  // justify-content: center;
+  // align-items: center;
+  // margin: 0 auto;
+}
